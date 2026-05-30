@@ -1,12 +1,6 @@
 # Sales Prediction & Marketing Spend Optimization
 
-[![View on NBViewer](https://img.shields.io/badge/Render-NBViewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/DSEXPL0RER/codealpha_task_03/blob/main/sales-prediction-advertising.ipynb)
-
 An end-to-end Python machine learning pipeline that models, analyzes, and predicts future revenue sales based on cross-platform advertising spend configurations. This project isolates high-performing channels and evaluates marketing return on investment (ROI) using data-driven statistics.
-
-> 💡 **Notebook Not Rendering on GitHub?** Click the orange **Render NBViewer** badge above to view the fully interactive version of this project with all charts and outputs perfectly displayed!
-
----
 
 ## 📊 Project Overview & Core Findings
 Using a dataset containing historical campaign expenditures across **TV, Radio, and Newspaper** platforms, we developed a Multiple Linear Regression model to identify exactly where capital is best utilized.
@@ -19,8 +13,8 @@ Using a dataset containing historical campaign expenditures across **TV, Radio, 
 
 ## 📂 Repository Contents
 * `Advertising.csv` — The foundational dataset containing platform-specific expenditures and sales figures.
-* `sales-prediction-advertising.ipynb` — The complete Jupyter Notebook tracking data loading, cleaning, EDA, visualization, modeling, and evaluation steps.
-* `sales_correlation_heatmap.png` — High-resolution visualization showing individual feature correlation matrices.
+* `sales_prediction_advertising.ipynb` — The complete Jupyter Notebook tracking data loading, cleaning, EDA, visualization, modeling, and evaluation steps.
+* `advertising_correlation_heatmap.png` — High-resolution visualization showing individual feature correlation matrices.
 * `marketing_spend_regression_plots.png` — Line-of-best-fit visualization illustrating individual channel trajectories vs. Sales.
 
 ---
@@ -30,7 +24,7 @@ Using a dataset containing historical campaign expenditures across **TV, Radio, 
 ### 1. Variable Correlation Matrix
 The heatmap below outlines the direct linear association between each advertising feature and final conversion rates.
 
-![Variable Correlation Matrix](sales_correlation_heatmap.png)
+![Variable Correlation Matrix](advertising_correlation_heatmap.png)
 
 * **TV ($0.782$):** Possesses the strongest overall linear anchor to revenue generation.
 * **Radio ($0.576$):** Shows a healthy, moderate-to-strong connection with conversion spikes.
@@ -63,13 +57,3 @@ $$\text{Predicted Sales} = 2.9791 + (0.0447 \times \text{TV}) + (0.1892 \times \
 1. **Defund Traditional Print Media:** Terminate active assignments toward traditional **Newspaper** spaces. It does not scale sales revenue effectively.
 2. **Aggressively Scale Audio Networks:** Reallocate print savings into **Radio, Podcasts, and Streaming Audio infrastructure** to exploit its high efficiency weight.
 3. **Protect TV Budgets:** Maintain steady budget targets on **TV campaigns** to secure broad consumer discovery and fill the top of the sales funnel.
-
----
-
-## 🛠️ Installation & Execution
-To replicate the notebook execution pipeline locally, complete the following commands:
-
-1. Clone the repository to your desktop machine:
-```bash
-git clone [https://github.com/DSEXPL0RER/codealpha_task_03.git](https://github.com/DSEXPL0RER/codealpha_task_03.git)
-cd codealpha_task_03
